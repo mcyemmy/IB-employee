@@ -1,0 +1,372 @@
+.main-container {
+    width: 970px;
+    font-family: AvenirNextLTW02-Regular,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+
+/* Home Page
+================ */
+
+.transformed-hero {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.transformed-hero:before, .transformed-hero:after {
+    opacity: 1;
+    background-color: #fff;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+.transformed-hero:before {
+    height: 25%;
+    width: 28%;
+    top: 90%;
+    left: 0;
+    -webkit-transform: skewY(-155deg);
+    transform: skewY(-155deg);
+}
+.transformed-hero:after {
+    height: 35%;
+    width: 100%;
+    top: 90%;
+    right: 0;
+    -webkit-transform: skewY(-12deg);
+    transform: skewY(-12deg);
+}
+.hero {
+    background: url(../images/hero-1k.png) -10px -30px no-repeat;
+    width: 100%;
+    height: 520px;
+    position: relative;
+}
+.hero-title {
+    color: #fff;
+    left: 5%;
+    position: absolute;
+    top: 15%;
+}
+.hero-title h1, .hero-title p {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+}
+.hero-title p {
+    margin-bottom: -30px;
+}
+.hero-title p > span {
+    display: inline-block;
+    margin-right: 30px;
+}
+.hero-title p > span span {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+}
+.overlay-hero {
+    position: relative;
+    z-index: 3;
+}
+.overlay-hero ul {
+    display: table;
+    list-style-type: none;
+    margin-top: -70px;
+    padding-left: 0;
+    width: 100%;
+    z-index: 3;
+}
+.overlay-hero li {
+    background-color: rgba(0,0,0,.7);
+    display: table-cell;
+}
+.overlay-hero li:not(:first-child) {
+    border-left: 1px solid #666;  
+}
+.overlay-hero li:hover {
+    background-color:#000;
+}
+.overlay-hero li a {
+    padding: 10px 0 20px 30px;
+}
+.overlay-hero li a, .overlay-promo {
+    color: #fff;
+    position: relative;
+    text-align: left;
+    z-index: 2;
+    text-transform: capitalize;
+    display: block;
+    text-decoration: none;
+}
+.overlay-hero li hr {
+    border-width: 0;
+    border-top: 1px solid;
+    color: #666 !important;
+    margin: 15px 0;
+    text-align: left;
+    width: 12%;
+}
+.overlay-hero li h3 {
+    font-size: 20px;
+    margin: 0;
+    width: 180px;
+}
+.overlay-hero li p, .overlay-promo p {
+    visibility: hidden;
+    font-size: 0;
+}
+.overlay-hero .fa {
+     margin: -30px 35px 0 0;
+}
+.overlay-hero .fa, .overlay-promo .fa {
+    font-size: 22px; 
+    margin: -34px 40px 0 0;
+    float: right;
+}
+[aria-controls] {
+    cursor: pointer;
+}
+.details {    
+    color: #888;
+    margin: 30px 0;
+}
+.promo {
+}
+.promo ul {
+    padding-left: 0;
+}
+.promo li {
+    margin-bottom: 0;
+    width: 32%;
+    overflow: hidden;
+    display: inline-block;
+}
+.promo li:not(:first-child){
+    margin-left: 10px;
+}
+.promo .overlay-promo { 
+    background-color: rgba(0,0,0,.7); 
+    width: 100%;
+    padding: 20px;
+    margin-top: -114px;
+}
+.promo .overlay-promo:hover {
+    background-color:#000;
+    box-shadow: 0 45px 64px 46px #000;
+}
+.promo img {
+    min-width: 100%;
+    height: 226px;
+}
+.overlay-promo h4 {
+    font-size: 18px;
+}
+.overlay-promo .fa {
+    margin: -45px 60px 0 0;
+}
+.inquiry-form {
+    margin-top: 54px;
+}
+.inquiry-form h2 {    
+    font-size: 40px;
+    width: 259px;
+    color: #666;
+    line-height: 1;
+}
+.inquiry-form h2 span {
+    color: #070;
+}
+.inquiry-form input {
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid #bbb;
+    display: inline-block;
+    width: 435px;
+    font-size: 24px;
+    padding: 0 10px 8px 20px;
+}
+.inquiry-form input::placeholder {
+    color: #ccc;
+}
+.inquiry-form button {
+    display: inline-block;
+    width: 300px;
+    background: #090;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #090;
+    border-radius: 5px 5px;
+    font-size: 20px;
+    padding: 14px;
+    margin-left: 20px;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+.inquiry-form button:hover {
+    box-shadow: 0 2px 0px 2px #666;
+}
+.inquiry-form button:focus, .inquiry-form button:active {
+    box-shadow: none;
+}
+.qa {
+    margin-top: 52px;
+}
+.qa h5 {
+    color: #999;
+    font-size: 16px;
+}
+.qa li {
+    list-style: none;
+}
+.qa li div {
+    margin-bottom: 24px;
+    display: table;
+}
+.qa div span {
+    display: table-cell;
+}
+.qa div span:first-child {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    width: 156px;
+}
+.qa div span:nth-child(2) {
+    font-size: 16px;
+    color: #999;
+}
+
+
+/* Member Page
+================ */
+.back-to-home {
+    margin: 30px 10px 30px;    
+}
+.back-to-home a {
+    color: #090;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.member-hero {
+    margin-bottom: 46px;
+}
+.member-hero .hero {
+    background: url(../images/employee-970.png) no-repeat;
+    width: 100%;
+    height: 620px;
+    position: relative;
+}
+.member-hero .hero-title {
+    top: 70%;
+}
+.member-hero .hero-title h1 {
+    width: 60%;
+}
+.member-hero .hero-title h1 span {
+    color: #090;
+    background: #ddd;
+}
+.article {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 0 20px 10px 0;
+}
+.article time {
+    color: #999;
+    font-size: 22px;
+    font-weight: bold;
+    width: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.article article {
+    padding-left: 30px;
+}
+.article article, .article time {
+    display: table-cell;
+}
+.article article h3 {
+    margin: 0 0 10px;
+}
+.article article h3 a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #090;
+    text-transform: capitalize;
+}
+.article article .icon {
+    display: inline-block; 
+    text-decoration: none;
+    outline: 0;
+    color: #aaa;
+    font-weight: normal;
+    font-size: 16px;
+    display: inline-block;
+}
+.article article .icon span {
+    margin: 0 4px 0 8px;
+}
+.article article .details {
+    display: table;
+    margin: 0;
+}
+.article article .thumbnail {
+    padding: 0 20px 0 0;
+    display: table-cell;
+    text-decoration: none;
+    outline: 0;
+}
+.article article p {
+    font-size: 14px;
+    margin-top: -5px;
+    display: table-cell;
+    color: #000;
+    vertical-align: top;
+    line-height: 1.7;
+}
+
+
+/* Media Queries
+================== */
+
+@media (max-width:970px) {
+    .main-container {
+        width: 100%;
+    }
+    .inquiry-form input {
+        width: 40%
+    }
+    .inquiry-form button {
+        width: 40%;
+    }    
+    .member-hero .hero-title {
+        top: 50%;
+    }
+}
+@media (max-width:768px) {
+    .overlay-promo .fa {
+        display: none !important;
+    }       
+    .promo li {
+        margin-bottom: 0;
+        width: 31%;
+    }
+    .overlay-hero li {
+        display: block;
+        width: 100%;
+    }
+    .overlay-hero li a {
+        padding-top: 0;
+    }
+    .inquiry-form input {
+        width: 90%
+    }
+    .inquiry-form button {
+        width: 80%;
+        margin-top: 20px;
+    }
+}

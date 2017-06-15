@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>  
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>Interstate Battery - Home</title>
+       
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <section class="transformed-hero">
+                <div class="hero">
+                    <!-- <div class="left-transform"></div>
+                    -->
+                    <div class="hero-title">
+                        <h1>Get Ready for the <br>New InterstateBatteries.com</h1>
+                        <div>
+                            <p>We're Arriving In...</p>
+                            <p id="countdown"></p>
+                        </div>
+                    </div>
+                </div>               
+            </section>
+            <nav class="overlay-hero">                      
+                <ul role="tablist">
+                    <li class="" aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation10">
+                        <a href="##">
+                            <hr>
+                            <h3>New Interstate Batteries website</h3>
+                            <p>Learn More</p>
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>                        
+                        </a>
+                    </li>
+                    <li class="" aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation10">
+                        <a href="##">
+                            <hr>
+                            <h3>Check back for updated training</h3>
+                            <p>Learn More</p>
+                            <i aria-hidden="true" class="fa fa-arrow-right"></i>                            
+                        </a>
+                    </li>
+                    <li class="" aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation10">
+                        <a href="##">
+                            <hr>
+                            <h3>Download all launch resources</h3>
+                            <p>Learn More</p>
+                            <i aria-hidden="true" class="fa fa-arrow-right"></i>                            
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="details">
+                <p>
+                    Launching the new InterstateBatteries.com is a big deal. And we want everyone in the Interstate Batteries system prepared to do their part.
+                </p>
+                <p>
+                    Distributors, Franchises and Team Members - visit the pages below for details you need to know, info on what you can do on the new site and documents that show you how. Explore, download and ask questions!
+                </p>
+            </section>
+            <nav class="promo">
+                <ul role="tablist">
+                    <li class="" aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation10">                        
+                        <img src="images/distributor.png" alt="Promo">
+                        <a href="##" class="overlay-promo">
+                            <h4 class="title">For Distributors</h4>
+                            <p>Learn More</p>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>                                                           
+                        </a>
+                    </li>
+                    <li class="" aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation10">
+                        <img src="images/franchisee.png" alt="Promo">                        
+                        <a href="##" class="overlay-promo">
+                            <h4 class="title">For Franchisees</h4>
+                            <p>Learn More</p>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>                                                           
+                        </a>
+                    </li>
+                    <li class="" aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation10">                        
+                        <img src="images/employee.png" alt="Promo">                        
+                        <a href="team-members.html" class="overlay-promo">
+                            <h4 class="title">For Team Members</h4>
+                            <p>Learn More</p>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>                                                           
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="inquiry-form">
+                <h2>Questions &amp; <span>Answers</span></h2>
+                <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                    <input type="text" placeholder="What can we help you with?">
+                    <button>Ask the Launch Team</button>
+                </form>
+            </section>
+            <section class="qa">
+                <h5>Showing 1 of 1</h5>
+                <ul>
+                    <li>
+                        <div class="question">
+                            <span>Question:</span>
+                            <span>Are you guys planning to update digital signage with news of the launch</span>
+                        </div>
+                        <div class="answer">
+                            <span>Answer:</span>
+                            <span>Thank you for the question. Yes we definitely plan to update digital signage as we pushout updates directly to employees, distributors and franchisees.</span></div>
+                    </li>
+                </ul>                
+            </section>
+        </div>    
+        <!-- Countdown Script -->    
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jul 18, 2017 10:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+              // Get todays date and time
+              var now = new Date().getTime();
+
+              // Find the distance between now an the count down date
+              var distance = countDownDate - now;
+
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+              // Display the result in the element with id="demo"
+              document.getElementById("countdown").innerHTML = "<span>" + days + "<span>Days</span></span><span>" + hours + "<span>Hours</span></span><span>" + minutes + "<span>Minutes</span></span><span>" + seconds + "<span>Seconds</span></span>";
+
+              // If the count down is finished, write some text 
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+        </script>
+    </body>
+</html>
